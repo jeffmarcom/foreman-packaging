@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.5.0-svt
+Version: 1.5.0_svt
 Release: 0.develop%{?dist}
 Summary:Systems Management web application
 
