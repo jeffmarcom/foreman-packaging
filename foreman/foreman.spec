@@ -14,14 +14,14 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0
+Version: 1.5.0-svt
 Release: 0.develop%{?dist}
 Summary:Systems Management web application
 
 Group:  Applications/System
 License: GPLv3+ with exceptions
 URL: http://theforeman.org
-Source0: http://downloads.theforeman.org/%{name}/%{name}-%{version}.tar.bz2
+Source0: %{name}-%{version}.tar.bz2
 Source1: %{name}.init
 Source2: %{name}.sysconfig
 Source3: %{name}.logrotate
@@ -589,8 +589,8 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
-* Wed Apr 16 2014 Dominic Cleal <dcleal@redhat.com> - 1.6.0-0.develop
-- Bump version to 1.6-develop
+* Tue Jun 3 2014 Jeff Marcom <jeff.marcom@simplivity.com> - 1.5.0-svt.develop
+- Change version to 1.5.0-svt-develop
 
 * Thu Jan 16 2014 Dominic Cleal <dcleal@redhat.com> - 1.5.0-0.develop
 - Bump version to 1.5-develop
