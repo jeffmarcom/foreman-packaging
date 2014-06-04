@@ -2,16 +2,12 @@
 %global confdir extras/packaging/rpm/sources
 %global foreman_rake %{_sbindir}/%{name}-rake
 
-%if "%{?scl}" == "ruby193"
-    %global scl_prefix %{scl}-
-    %global scl_ruby /usr/bin/ruby193-ruby
-    %global scl_rake /usr/bin/ruby193-rake
-    ### TODO temp disabled for SCL
-    %global nodoc 1
-%else
-    %global scl_ruby /usr/bin/ruby
-    %global scl_rake /usr/bin/rake
-%endif
+%global scl ruby193
+%global scl_prefix %{scl}-
+%global scl_ruby /usr/bin/ruby193-ruby
+%global scl_rake /usr/bin/ruby193-rake
+### TODO temp disabled for SCL
+%global nodoc 1
 
 Name:   foreman
 Version: 1.5.0_svt
